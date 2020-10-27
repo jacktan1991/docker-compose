@@ -29,7 +29,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: jacktan1991/docker-compose-docker20.10
+          tags: jacktan1991/docker-compose:docker20.10
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
